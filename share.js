@@ -17,6 +17,7 @@ document.getElementById('shareButton').addEventListener('click', async () => {
     // Invoke the share dialog
     await navigator.share(shareData);
     console.log('Data was shared successfully');
+
   } catch (err) {
     console.error('Share failed:', err.message);
   }
